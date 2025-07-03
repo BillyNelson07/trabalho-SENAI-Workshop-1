@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to left, hsl(12, 98%, 64%), #feb47b, hsl(12, 98%, 64%), #feb47b);
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: hsla(0, 0%, 0%, 0.250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho a{
+    text-decoration: none;
+    color: black;
+}
+
+#areaInterativa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+#areaAdicao{
+    background-color: hsla(0, 0%, 0%, 0.350);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border-radius: 8px;
+    row-gap: 10px;
+}
+
+#titulo{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 100%, 0.750);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}   
+
+#descricao{
+    resize: none;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 100%, 0.750);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+#botaoAdicionar{
+    background-color: hsl(0, 0%, 100%, 0.750);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: crosshair;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+#tarefasPendentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    background-color: hsl(0, 0%, 100%, 0.750);
+    padding: 5px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#linkConcluidas{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 100%, 0.750);
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    color: black;  
+}
+
+
+
+#areaAdicaoMaisLink{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 300px;
+    background-color: hsla(0, 0%, 0%, 0.250);
+    margin: 0px 0px 0px 40px;
+    border-radius: 8px;
+    row-gap: 10px;    
+}
+
+#tarefasAdicionadas{
+    background-color: hsla(0, 0%, 0%, 0.250);
+    width: 900px;
+    margin: 0px 40px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    border-radius: 8px;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.tarefa{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsla(0, 0%, 0%, 0.350);
+    padding: 10px;
+    border-radius: 8px;
+    row-gap: 5px;
+    width: auto;
+}
+
+.tituloTarefa{
+    background-color: hsl(0, 0%, 100%, 0.750);
+    border-radius: 8px;
+    padding: 8px 5px 8px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.descricaoTarefa{
+    background-color: hsl(0, 0%, 100%, 0.750);
+    border-radius: 8px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.botaoConcluir{
+    background-color: hsl(0, 0%, 100%, 0.750);
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
