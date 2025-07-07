@@ -98,7 +98,6 @@ body{
 }
 
 #tarefasAdicionadas{
-    background-color: hsla(0, 0%, 0%, 0.250);
     width: 900px;
     margin: 0px 40px 0px 0px;
     display: grid;

@@ -24,7 +24,7 @@
 
             <div id="areaAdicaoMaisLink">
 
-            <div id="areaAdicao">
+                <form action="submit" id="areaAdicao">
 
                     <input type="text" placeholder="Digite o título da tarefa" id="titulo">
                     <textarea placeholder="Digite a descrição da tarefa" id="descricao" rows="6" cols="30"></textarea>
@@ -32,14 +32,14 @@
                                                     <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
                                                 </svg><p>Adicionar</p></button>
 
-                </div>
+                </form>
 
                 <div id="tarefasPendentes">
 
                         <p>Tarefas Pendentes:</p>
-                        <p>0</p>
+                        <p id="contador"></p>
 
-                    </div>
+                </div>
 
             </div>
 
@@ -49,15 +49,7 @@
             
             <div id="tarefasAdicionadas">
 
-                <div class="tarefa">
-
-                    <strong class="tituloTarefa">Titulo</strong>    
-                    <p class="descricaoTarefa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae rem eius consectetur in nulla quod doloremque libero officia consequuntur aliquam officiis magnam ut non laboriosam ad, sunt illo ea.</p>
-                    <button class="botaoConcluir"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-                                                  </svg><p>Concluir</p></button>
-
-                </div>
+                
                 
 
             </div>
