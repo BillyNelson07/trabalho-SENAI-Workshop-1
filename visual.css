@@ -1,22 +1,57 @@
+@font-face {
+    font-family: breathOfFireIII;
+    src: url(fonts/BreatheFireIii-PKLOB.ttf);
+}
+
+@font-face {
+    font-family: breathOfFire;
+    src: url(fonts/BreatheFire-65pg.ttf);
+}
+
+@font-face {
+    font-family: eagleLake;
+    src: url(fonts/EagleLake-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
-    background: linear-gradient(to left, hsl(12, 98%, 64%), #feb47b, hsl(12, 98%, 64%), #feb47b);
+    background-image: url(images/brown-brick-wall-surface-texture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to left, hsl(12, 98%, 64%), #feb47b, hsl(12, 98%, 64%), #feb47b); */
+}
+
+#ladoEsquerdo{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    row-gap: 20px;
+}
+
+#tituloPrincipal{
+    background-image: url(images/wooden-floor-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }
 
 #cabecalho{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: hsla(0, 0%, 0%, 0.250);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: breathOfFireIII, Arial, Helvetica, sans-serif;
+    font-size: xx-large;
 }
 
-#cabecalho a{
-    text-decoration: none;
-    color: black;
+#frase{
+    font-family: eagleLake, Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 #areaInterativa{
@@ -26,72 +61,72 @@ body{
 }
 
 #areaAdicao{
-    background-color: hsla(0, 0%, 0%, 0.350);
+    background-image: url(images/wooden-floor-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
     border-radius: 8px;
     row-gap: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
+
 }
 
 #titulo{
     padding: 5px;
     border-radius: 8px;
-    background-color: hsl(0, 0%, 100%, 0.750);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    background-color: hsla(0, 0%, 0%, 0.062);
+    font-family: breathOfFireIII, Arial, Helvetica, sans-serif;
     text-align: center;
+    border-color: rgba(250, 235, 215, 0);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }   
 
 #descricao{
     resize: none;
     border-radius: 8px;
-    background-color: hsl(0, 0%, 100%, 0.750);
+    background-color: hsla(0, 0%, 0%, 0.062);
+    border-color: rgba(250, 235, 215, 0);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: breathOfFire,Arial, Helvetica, sans-serif;
     font-size: small;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }
+
 #botaoAdicionar{
-    background-color: hsl(0, 0%, 100%, 0.750);
+    background-color: hsla(0, 0%, 100%, 0);
+    border-color: rgba(240, 248, 255, 0);
     border-radius: 8px;
     padding: 5px;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: breathOfFire, Arial, Helvetica, sans-serif;
     cursor: crosshair;
     display: flex;
     justify-content: center;
     align-items: bottom;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }
 #tarefasPendentes{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 4px;
-    background-color: hsl(0, 0%, 100%, 0.750);
+    background-image: url(images/wooden-floor-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 5px;
     border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: breathOfFire,Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }
 
-#linkConcluidas{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: hsl(0, 0%, 100%, 0.750);
-    padding: 5px;
-    border-radius: 8px;
-    text-align: center;
-    color: black;  
-}
-
-
-
-#areaAdicaoMaisLink{
+#areaAdicaoMaisContagem{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px;
     width: 300px;
-    background-color: hsla(0, 0%, 0%, 0.250);
     margin: 0px 0px 0px 40px;
     border-radius: 8px;
     row-gap: 10px;    
@@ -106,41 +141,59 @@ body{
     padding: 10px;
     row-gap: 10px;
     column-gap: 10px;
+    overflow: auto;
 }
 
 .tarefa{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: hsla(0, 0%, 0%, 0.350);
+    background-image: url(images/wooden-floor-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 10px;
     border-radius: 8px;
     row-gap: 5px;
     width: auto;
+    box-shadow: 0 4px 16px 0 hsla(0, 0%, 0%, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
 }
 
 .tituloTarefa{
-    background-color: hsl(0, 0%, 100%, 0.750);
+    font-family: eagleLake, Arial, Helvetica, sans-serif;
     border-radius: 8px;
     padding: 8px 5px 8px 5px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: medium;
 }
 
 .descricaoTarefa{
-    background-color: hsl(0, 0%, 100%, 0.750);
+    background-color: hsla(0, 0%, 100%, 0);
     border-radius: 8px;
     padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: eagleLake, Arial, Helvetica, sans-serif;
+    font-size: small;
     text-align: center;
+    resize: none;
+    outline: none;
+    cursor: default;
+    border-color: rgba(240, 248, 255, 0);
+}
+
+.descricaoTarefa :focus{
+    outline:none;
+    border: none;
 }
 
 .botaoConcluir{
-    background-color: hsl(0, 0%, 100%, 0.750);
+    background-color: hsla(0, 0%, 100%, 0);
     border-radius: 8px;
     padding: 5px;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: breathOfFire, Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: bottom;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 8px;
 }
