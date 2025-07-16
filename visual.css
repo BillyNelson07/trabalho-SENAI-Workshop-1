@@ -22,6 +22,8 @@ body{
     background-image: url(images/brown-brick-wall-surface-texture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fixed;
     /* background: linear-gradient(to left, hsl(12, 98%, 64%), #feb47b, hsl(12, 98%, 64%), #feb47b); */
 }
 
@@ -30,6 +32,8 @@ body{
     grid-template-columns: 1fr;
     padding: 10px;
     row-gap: 20px;
+    max-width: 366px;
+    max-height: 450px;
 }
 
 #tituloPrincipal{
@@ -42,6 +46,10 @@ body{
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
+    max-width: 300px;
+    max-height: 170px;
+    min-width: 300px;
+    min-height: 170px;
 }
 
 #cabecalho{
@@ -71,7 +79,10 @@ body{
     border-radius: 8px;
     row-gap: 10px;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
-
+    max-width: 300px;
+    max-height: 170px;
+    min-width: 300px;
+    min-height: 170px;
 }
 
 #titulo{
@@ -121,6 +132,10 @@ body{
     border-radius: 8px;
     font-family: breathOfFire,Arial, Helvetica, sans-serif;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
+    max-width: 300px;
+    max-height: 20px;
+    min-width: 300px;
+    min-height: 20px;
 }
 
 #areaAdicaoMaisContagem{
@@ -129,7 +144,7 @@ body{
     width: 300px;
     margin: 0px 0px 0px 40px;
     border-radius: 8px;
-    row-gap: 10px;    
+    row-gap: 20px;    
 }
 
 #tarefasAdicionadas{
@@ -142,6 +157,7 @@ body{
     row-gap: 10px;
     column-gap: 10px;
     overflow: auto;
+    position: relative;
 }
 
 .tarefa{
@@ -156,6 +172,10 @@ body{
     row-gap: 5px;
     width: auto;
     box-shadow: 0 4px 16px 0 hsla(0, 0%, 0%, 0.900), 0 1.5px 4px 0 rgba(0,0,0,0.900);
+    max-width: 300px;
+    max-height: 170px;
+    min-height: 170px;
+    min-width: 300px;
 }
 
 .tituloTarefa{
